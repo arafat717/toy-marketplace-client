@@ -2,11 +2,15 @@
 import { useEffect, useState } from "react";
 import AlltoysCart from "./AlltoysCart";
 
+import useSettitle from "../Hooks/useSettitle";
+
 
 
 const AllTouys = () => {
     const [alltoys, setAlltoys] = useState([])
     const [searchtext, setSearchtext] = useState(" ")
+    useSettitle('all toys')
+   
     useEffect(() => {
         fetch('http://localhost:5000/add')
             .then(res => res.json())

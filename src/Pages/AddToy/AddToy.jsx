@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import { AuthContex } from "../../AuthProviders/AuthProviders";
 import Swal from "sweetalert2";
+import useSettitle from "../../Hooks/useSettitle";
 
 const AddToy = () => {
     const { user } = useContext(AuthContex)
+    useSettitle('add toy')
     // const cars = useLoaderData()
     // const { _id, price, title, img } = cars;
 

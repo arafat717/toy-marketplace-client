@@ -4,12 +4,14 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContex } from "../../AuthProviders/AuthProviders";
 import SocialLogin from "../../SocialLogin/SocialLogin";
 import Swal from "sweetalert2";
+import useSettitle from "../../Hooks/useSettitle";
 
 
 
 const Register = () => {
     const [errors, setErrors] = useState()
     const [success, setSuccess] = useState()
+    useSettitle('register')
     const { createuser } = useContext(AuthContex)
     const Navigate = useNavigate();
     const location = useLocation();
@@ -90,7 +92,7 @@ const Register = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn btn-primary">Register</button>
                         </div>
                         <div>
                             <p className='text-red-950'><small>{errors}</small></p>

@@ -4,10 +4,12 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContex } from '../../AuthProviders/AuthProviders';
 import SocialLogin from '../../SocialLogin/SocialLogin';
 import Swal from 'sweetalert2';
+import useSettitle from '../../Hooks/useSettitle';
 
 const Login = () => {
     const { loggedUser } = useContext(AuthContex)
     const Navigate = useNavigate();
+    useSettitle('login')
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 

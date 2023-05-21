@@ -2,10 +2,12 @@
 /* eslint-disable react/prop-types */
 
 import { Link } from "react-router-dom";
+import useSettitle from "../Hooks/useSettitle";
 
 
 const AlltoysCart = ({ alltoy }) => {
     const { _id, name, date, photo, userName, price, catagory, quantity, discription } = alltoy;
+    useSettitle('all toys')
     return (
         <div className="overflow-x-auto mt-2 w-full">
             <table className="table w-full">

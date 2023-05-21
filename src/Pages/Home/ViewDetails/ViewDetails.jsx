@@ -1,8 +1,10 @@
 import { useLoaderData } from "react-router-dom";
+import useSettitle from "../../../Hooks/useSettitle";
 
 
 const ViewDetails = () => {
     const details = useLoaderData();
+    useSettitle('toy details')
     console.log(details)
     // eslint-disable-next-line no-unused-vars
     const { name, date, email, photo, userName, price, catagory, quantity, discription } = details;

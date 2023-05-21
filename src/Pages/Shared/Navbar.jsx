@@ -19,13 +19,15 @@ const Navbar = () => {
         <Link to='/alltoys' className="m-4">All Toys</Link>
         <Link to='/mytoys' className="m-4">MY Toys</Link>
         <Link to='/add' className="m-4">Add Toys</Link>
+
         {/* {
             user ? <>
                 <Link to='/mytoys' className="m-4">MY Toys</Link>
                 <Link to='/add' className="m-4">Add Toys</Link>
             </> : ''
         } */}
-        <Link className="m-4">Blog</Link>
+
+        <Link to='/blogs' className="m-4">Blog</Link>
     </>
     return (
         <div className="navbar bg-gray-950">

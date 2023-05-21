@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import MyToysCart from "./MyToysCart";
 import Swal from "sweetalert2";
 import { AuthContex } from "../../AuthProviders/AuthProviders";
+import useSettitle from "../../Hooks/useSettitle";
 // import MyToysCart from "./MyToysCart";
 
 
@@ -9,6 +10,7 @@ import { AuthContex } from "../../AuthProviders/AuthProviders";
 const MyToys = () => {
     const {user}=useContext(AuthContex)
     const [toys, setToys] = useState([])
+    useSettitle('my toys')
     console.log(toys)
     useEffect(() => {
         fetch(`http://localhost:5000/add/${user?.email}`)

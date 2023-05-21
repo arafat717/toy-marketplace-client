@@ -11,6 +11,7 @@ import NotFoundPage from "../NotFoundPage/NotFoundPage";
 import ViewDetails from "../Pages/Home/ViewDetails/ViewDetails";
 import AllTouys from "../AllToys/AllTouys";
 import AllToysDetails from "../AllToys/AllToysDetails";
+import Blogs from "../blogs/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: 'login',
         element: <Login></Login>
+      },
+      {
+        path: 'blogs',
+        element: <Blogs></Blogs>
       },
       {
         path: 'register',

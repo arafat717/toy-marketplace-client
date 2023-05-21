@@ -1,8 +1,10 @@
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import useSettitle from "../../Hooks/useSettitle";
 
 const UpdateToy = () => {
     const toys = useLoaderData();
+    useSettitle('update toy')
     // eslint-disable-next-line no-unused-vars
     const { _id, price, quantity, discription, date } = toys;
 

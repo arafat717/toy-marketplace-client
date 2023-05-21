@@ -1,8 +1,10 @@
 /* eslint-disable no-unused-vars */
 import { useLoaderData } from "react-router-dom";
+import useSettitle from "../Hooks/useSettitle";
 
 
 const AllToysDetails = () => {
+    useSettitle('toy details')
     const data = useLoaderData()
     const {_id, name, email,date, photo, userName, price, catagory, quantity, discription}=data;
     console.log(data)
