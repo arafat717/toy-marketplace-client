@@ -12,14 +12,14 @@ const AllTouys = () => {
     useSettitle('all toys')
    
     useEffect(() => {
-        fetch('http://localhost:5000/add')
+        fetch('https://car-toy-server-beryl.vercel.app/add')
             .then(res => res.json())
             .then(data => {
                 setAlltoys(data)
             })
     }, [])
     const handlesearch = () =>{
-        fetch(`http://localhost:5000/searchname/${searchtext}`)
+        fetch(`https://car-toy-server-beryl.vercel.app/searchname/${searchtext}`)
         .then(res=>res.json())
         .then(data=>{
             setAlltoys(data)

@@ -49,17 +49,17 @@ const router = createBrowserRouter([
       {
         path: 'alltoydetails/:id',
         element: <PrivateRoutes><AllToysDetails></AllToysDetails></PrivateRoutes>,
-        loader: ({params})=>fetch(`http://localhost:5000/add/${params.id}`)
+        loader: ({params})=>fetch(`https://car-toy-server-beryl.vercel.app/add/${params.id}`)
       },
       {
         path: 'updatetoy/:id',
         element: <PrivateRoutes><UpdateToy></UpdateToy></PrivateRoutes>,
-        loader: ({params}) => fetch(`http://localhost:5000/add/${params.id}`)
+        loader: ({params}) => fetch(`https://car-toy-server-beryl.vercel.app/add/${params.id}`)
       },
       {
         path: 'view/:id',
         element: <PrivateRoutes><ViewDetails></ViewDetails></PrivateRoutes>,
-        loader: ({params})=>fetch(`http://localhost:5000/toydata/${params.id}`)
+        loader: ({params})=>fetch(`https://car-toy-server-beryl.vercel.app/toydata/${params.id}`)
       }
     ]
   },

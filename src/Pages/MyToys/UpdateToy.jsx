@@ -22,7 +22,7 @@ const UpdateToy = () => {
         }
 
         console.log(toys)
-        fetch(`http://localhost:5000/add/${_id}`, {
+        fetch(`https://car-toy-server-beryl.vercel.app/adds/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

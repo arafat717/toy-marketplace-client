@@ -7,7 +7,7 @@ const ShopCatagory = () => {
     const [datas, setDatas] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/toydata/${activeTab}`)
+        fetch(`https://car-toy-server-beryl.vercel.app/toydata/${activeTab}`)
             .then(res => res.json())
             .then(data => {
                 setDatas(data)

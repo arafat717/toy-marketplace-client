@@ -45,12 +45,12 @@ const Navbar = () => {
                                 <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
                             </a>
                             <ul className="p-2">
-                                <Link className="m-4">All Toys</Link>
-                                <Link className="m-4">MY Toys</Link>
-                                <Link className="m-4">Add Toys</Link>
+                                <Link to='/alltoys' className="m-4">All Toys</Link>
+                                <Link to='/mytoys' className="m-4">MY Toys</Link>
+                                <Link to='/add' className="m-4">Add Toys</Link>
                             </ul>
                         </li>
-                        <Link className="m-4">Blog</Link>
+                        <Link to='/blogs' className="m-4">Blog</Link>
                     </ul>
                 </div>
                 <img className="w-14 rounded-full" src="https://media.istockphoto.com/id/1254555114/vector/auto-car-logo-icon-vector-illustration-template-modern-sport-car-vector-logo-icon-silhouette.jpg?s=612x612&w=is&k=20&c=FiwAzR9-jaMCKHHPiQBYJyJV1r54WQhwgDz6VWJMbVo=" alt="" />

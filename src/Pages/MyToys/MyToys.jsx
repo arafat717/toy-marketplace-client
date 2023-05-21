@@ -13,7 +13,7 @@ const MyToys = () => {
     useSettitle('my toys')
     console.log(toys)
     useEffect(() => {
-        fetch(`http://localhost:5000/add/${user?.email}`)
+        fetch(`https://car-toy-server-beryl.vercel.app/add/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setToys(data)
@@ -32,7 +32,7 @@ const MyToys = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/add/${_id}`, {
+                fetch(`https://car-toy-server-beryl.vercel.app/add/${_id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())
